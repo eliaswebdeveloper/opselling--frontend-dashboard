@@ -5,8 +5,8 @@ import {
   type CreateOrderFromCheckoutSessionCommand,
   type OrderCreationRequestBody,
   type SignupRequestBody,
-} from '../shopping/types';
-import { PRICE_ID, PRODUCT_ID } from '../TESTING_MOCKS';
+} from '~/lib/shopping/types';
+import { PRICE_ID, PRODUCT_ID } from '~/lib/TESTING_MOCKS';
 
 export function formatDataIntoSignupRequest(data: any): SignupRequestBody {
   const SignupRequestBody: SignupRequestBody = {

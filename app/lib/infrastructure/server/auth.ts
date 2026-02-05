@@ -7,7 +7,6 @@ import {
   type SessionData,
   type SessionStorage,
 } from 'react-router';
-import { apiClient } from '../api/client';
 import type {
   AuthResponse,
   CreateSessionMiddlewareReturnType,
@@ -15,6 +14,7 @@ import type {
   ShouldCommitFunction,
   UserDetails,
 } from '~/lib/infrastructure/auth/types';
+import { apiClient } from '../api/client';
 
 function defaultShouldCommit() {
   return true;

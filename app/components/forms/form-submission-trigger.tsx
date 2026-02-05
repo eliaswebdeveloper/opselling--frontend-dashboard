@@ -1,6 +1,6 @@
 import { Button } from '~/components/ui/button';
-import type { FieldConfig } from '~/lib/forms/retrieving/types';
 import { cn } from '~/lib/utils';
+import type { FieldConfig } from '~/lib/various/form-retrieving/types';
 import { FormField } from './fields/form-field';
 
 interface FormProps {

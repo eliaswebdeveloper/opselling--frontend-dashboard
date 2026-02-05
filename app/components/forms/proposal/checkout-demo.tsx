@@ -1,4 +1,4 @@
-import { FieldTypeEnum } from '~/lib/forms/retrieving/types';
+import { FieldTypeEnum } from '~/lib/various/form-retrieving/types';
 import { FormField } from '../fields/form-field';
 import Grid from './grid';
 import type { FieldConfig, Form } from './schema';

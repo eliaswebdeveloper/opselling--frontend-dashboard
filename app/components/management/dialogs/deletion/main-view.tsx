@@ -1,9 +1,6 @@
-import type { ProductDeletionRequestBody } from '~/lib/management/types';
 import { ProductDeletionActionTrigger } from './action-trigger';
 
-export function ProductDeletionDialogContent({
-  productId,
-}: ProductDeletionRequestBody['body']) {
+export function ProductDeletionDialogContent({ productId }: any) {
   return (
     <div className="space-y-7">
       <div>

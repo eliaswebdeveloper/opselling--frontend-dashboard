@@ -2,7 +2,10 @@ import { useEffect } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { z } from 'zod';
-import { FieldTypeEnum, type FieldConfig } from '~/lib/forms/retrieving/types';
+import {
+  FieldTypeEnum,
+  type FieldConfig,
+} from '~/lib/various/form-retrieving/types';
 
 const formFields: FieldConfig[] = [
   {

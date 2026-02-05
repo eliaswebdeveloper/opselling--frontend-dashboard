@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { FieldTypeEnum } from '~/lib/forms/retrieving/types';
+import { FieldTypeEnum } from '~/lib/various/form-retrieving/types';
 
 export const FieldConfigSchema = z.object({
   name: z.string(),

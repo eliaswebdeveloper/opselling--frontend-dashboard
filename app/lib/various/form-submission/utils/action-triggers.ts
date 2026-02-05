@@ -1,17 +1,16 @@
 import type { Navigation } from 'react-router';
 import {
-  formatDataIntoCreateCheckoutSessionRequestBody,
-  formatDataIntoOrderCreationRequestBody,
-} from '../formatters/form-values';
-import {
   useSubmitFromReactRouter,
   type BaseUseFormSubmitOptions,
   type SubmitFunctionAbstraction,
 } from '../utils';
-import type {
-  CreateCheckoutSessionCommand,
-  CreateOrderFromCheckoutSessionCommand,
-} from '../shopping/types';
+import {
+  formatDataIntoCreateCheckoutSessionRequestBody,
+  formatDataIntoOrderCreationRequestBody,
+} from './payload-formatters';
+
+type CreateCheckoutSessionCommand = any;
+type CreateOrderFromCheckoutSessionCommand = any;
 
 function generateSubmitOptionsForOrdering(
   productId: string,

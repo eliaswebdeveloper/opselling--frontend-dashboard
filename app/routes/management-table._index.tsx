@@ -2,7 +2,7 @@ import { EntityManagementSampleTable } from '~/components/management/entity-dash
 import {
   createAuthenticatedClient,
   createAuthenticatedClientForAction,
-} from '~/lib/api/client.server';
+} from '~/lib/infrastructure/api/client.server';
 import { listProducts } from '~/lib/management/api';
 import { productManagementActionHandler } from '~/lib/management/server';
 import { ProductManagementRequestBodySchema } from '~/lib/management/types';

@@ -1,10 +1,6 @@
-import type { ProductEditionRequestBody } from '~/lib/management/types';
 import { ProductUpdateActionTrigger } from './action-trigger';
 
-export function ProductUpdateDialogContent({
-  productId,
-  newProductData,
-}: ProductEditionRequestBody['body']) {
+export function ProductUpdateDialogContent({ productId, newProductData }: any) {
   return (
     <div className="space-y-7">
       <div>

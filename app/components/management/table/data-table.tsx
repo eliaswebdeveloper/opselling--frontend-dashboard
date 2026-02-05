@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { useLoaderData } from 'react-router';
 import { GenericDataTable } from '~/components/common/table/generic-data-table';
 import { transformPaginatedResultToTableData } from '~/lib/management/utils/table';
-import { useTableDialog } from '~/lib/management/utils/table-dialog-context';
+import { useTableDialog } from '~/lib/various/dialogs/table-dialog-context';
 import type { loader } from '~/routes/management-table._index';
 import { TableRowDialog } from '../common/table-row-dialog';
 import { DialogContentHandler } from '../dialogs/dialog-content-handler';

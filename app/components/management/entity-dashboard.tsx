@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '~/components/ui/card';
-import { TableDialogProvider } from '~/lib/management/utils/table-dialog-context';
+import { TableDialogProvider } from '~/lib/various/dialogs/table-dialog-context';
 import { DashboardHeader } from './dashboard-header';
 import { DataTable } from './table/data-table';
 

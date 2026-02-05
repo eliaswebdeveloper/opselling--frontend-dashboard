@@ -1,14 +1,11 @@
 import { CheckCircle2 } from 'lucide-react';
-import type {
-  EntityManagementAction,
-  ProductEditionRequestBody,
-} from '~/lib/management/types';
+import type { ProductEditionRequestBody } from '~/lib/management/types';
 import { TableRowDialogFooter } from '../common/table-row-dialog-footer';
 import { ProductDeletionDialogContent } from './deletion/main-view';
 import { ProductUpdateDialogContent } from './update/main-view';
 
 interface DialogContentBaseProps {
-  managementAction: EntityManagementAction | null;
+  managementAction: string | null;
   productId: string;
   onClose: () => void;
 }

@@ -2,6 +2,7 @@ import { data, useActionData } from 'react-router';
 import { MainViewLogin } from '~/components/auth/login/main-view';
 import { performLogin } from '~/lib/infrastructure/auth/api';
 import { setAuthSession } from '~/lib/infrastructure/server/auth';
+import type { GlobalContextData } from '~/lib/infrastructure/server/global-context';
 import type { Route } from './+types/management-table._index';
 
 export function meta(args: Route.MetaArgs) {
@@ -16,13 +17,15 @@ export function meta(args: Route.MetaArgs) {
 
 export async function action(args: Route.ActionArgs) {
   const formData = await args.request.json();
+  const context = args.context;
+  const ctx = context as unknown as GlobalContextData;
 
   if (!formData) throw new Error('Error in request body');
 
-  const result = await performLogin(formData);
+  const authResponse = await performLogin(formData);
 
-  if (result) {
-    setAuthSession(result);
+  if (authResponse) {
+    setAuthSession(ctx.authSession, authResponse);
     return data({
       success: true,
       message: 'Thanks, we have recieved your submission',

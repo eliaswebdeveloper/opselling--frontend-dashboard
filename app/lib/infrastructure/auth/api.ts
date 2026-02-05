@@ -1,5 +1,5 @@
-import { apiClient } from '../api/client';
 import type { AuthResponse } from '~/lib/infrastructure/auth/types';
+import { apiClient } from '../api/client';
 
 export async function performLogin(
   formData: Record<string, any>

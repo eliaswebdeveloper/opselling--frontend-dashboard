@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useSubmit } from 'react-router';
 import { ELIASCARDONA_USER_ID, TENANT_ID } from '~/lib/TESTING_MOCKS';
-import type { GenericServerResponse } from '~/lib/api/types';
+import type { GenericServerResponse } from '~/lib/infrastructure/api/types';
 import { useShoppingContext } from '~/lib/shopping/context';
 import { ShoppingActionEnum } from '~/lib/shopping/types';
 import { triggerCheckoutSessionCreation } from '~/lib/various/form-submission/utils/action-triggers';
@@ -57,7 +57,7 @@ export function MainViewCheckoutPage({
       case ShoppingActionEnum.enum.CREATE_CHECKOUT_SESSION: {
         const checkoutSessionId = actionData.data.sessionId;
 
-        setCheckoutSessionInfo({ id: checkoutSessionId });
+        setCheckoutSessionInfo({ sessionId: checkoutSessionId });
         setPhase('CHECKOUT_SESSION_CREATED');
         break;
       }

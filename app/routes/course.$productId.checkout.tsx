@@ -1,7 +1,7 @@
 import { data } from 'react-router';
 import { CheckoutController } from '~/components/shopping/proposal';
-import { apiClient } from '~/lib/api/client';
-import { createAuthenticatedClientForAction } from '~/lib/api/client.server';
+import { apiClient } from '~/lib/infrastructure/api/client';
+import { createAuthenticatedClientForAction } from '~/lib/infrastructure/api/client.server';
 import { searchStripePriceByProductId } from '~/lib/shopping/api';
 import { ShoppingContextProvider } from '~/lib/shopping/context';
 import { shoppingServerActionHandler } from '~/lib/shopping/server';

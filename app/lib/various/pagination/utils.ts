@@ -1,4 +1,4 @@
-import type { PaginatedData } from '../management/utils/table';
+import type { PaginatedData } from '~/lib/management/utils/table';
 
 export function generateBlankPage() {
   return {

@@ -1,10 +1,13 @@
 import { useFormContext } from 'react-hook-form';
 import { useNavigation, useSubmit } from 'react-router';
 import { FormTrigger } from '~/components/forms/form-submission-trigger';
-import { formatDataIntoSignupRequest } from '~/lib/formatters/form-values';
-import { FieldTypeEnum, type FieldConfig } from '~/lib/forms/retrieving/types';
+import {
+  FieldTypeEnum,
+  type FieldConfig,
+} from '~/lib/various/form-retrieving/types';
 import { useSubmitFromReactRouter } from '~/lib/various/form-submission/utils';
 import { submitOptionsForOrdering_withNavigation } from '~/lib/various/form-submission/utils/action-triggers';
+import { formatDataIntoSignupRequest } from '~/lib/various/form-submission/utils/payload-formatters';
 import { getProductIdFromPathname } from '~/lib/various/utils';
 
 export function AccountInfoForm() {
