@@ -14,8 +14,8 @@ import { GenericHeader } from './components/layout/header/main-view';
 import {
   authSessionMiddleware,
   validateTokenMiddleware,
-} from './lib/server/auth';
-import { globalContextMiddleware } from './lib/server/global-context';
+} from './lib/infrastructure/server/auth';
+import { globalContextMiddleware } from './lib/infrastructure/server/global-context';
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },

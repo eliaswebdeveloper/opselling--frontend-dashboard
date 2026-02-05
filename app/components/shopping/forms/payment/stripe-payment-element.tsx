@@ -4,7 +4,7 @@ import {
   useStripe,
 } from '@stripe/react-stripe-js';
 import { useState } from 'react';
-import { getProductIdFromPathname } from '~/lib/utils/utils';
+import { getProductIdFromPathname } from '~/lib/various/utils';
 
 export function StripePaymentElement() {
   const stripeClient = useStripe();

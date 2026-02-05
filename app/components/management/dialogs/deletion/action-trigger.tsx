@@ -1,7 +1,7 @@
 import { Button } from '~/components/ui/button';
 import type { ProductDeletionRequestBody } from '~/lib/management/types';
 import { useTableDialog } from '~/lib/management/utils/table-dialog-context';
-import { useServerActionTrigger } from '~/lib/utils/utils';
+import { useServerActionTrigger } from '~/lib/various/utils';
 
 export function ProductDeletionActionTrigger({
   productId,

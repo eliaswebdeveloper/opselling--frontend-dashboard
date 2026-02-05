@@ -1,6 +1,5 @@
-import { apiClient } from '~/lib/api/client';
-import type { AuthResponse } from '~/lib/auth/types';
-import type { SignupRequestBody } from '../shopping/types';
+import { apiClient } from '../api/client';
+import type { AuthResponse } from '~/lib/infrastructure/auth/types';
 
 export async function performLogin(
   formData: Record<string, any>
@@ -15,7 +14,7 @@ export async function performLogin(
 }
 
 export async function performSignup(
-  requestBody: SignupRequestBody
+  requestBody: Record<string, any>
 ): Promise<AuthResponse> {
   try {
     const result = await apiClient.post<AuthResponse>('/auth/shopping-signup', {

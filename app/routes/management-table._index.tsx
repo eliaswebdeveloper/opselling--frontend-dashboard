@@ -7,7 +7,7 @@ import { listProducts } from '~/lib/management/api';
 import { productManagementActionHandler } from '~/lib/management/server';
 import { ProductManagementRequestBodySchema } from '~/lib/management/types';
 import { parseSearchParamsToApiFilters } from '~/lib/management/utils/utils';
-import { generateBlankPage } from '~/lib/pagination/utils';
+import { generateBlankPage } from '~/lib/various/pagination/utils';
 import type { Route } from './+types/management-table._index';
 
 export function meta(args: Route.MetaArgs) {

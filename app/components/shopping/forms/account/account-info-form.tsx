@@ -3,9 +3,9 @@ import { useNavigation, useSubmit } from 'react-router';
 import { FormTrigger } from '~/components/forms/form-submission-trigger';
 import { formatDataIntoSignupRequest } from '~/lib/formatters/form-values';
 import { FieldTypeEnum, type FieldConfig } from '~/lib/forms/retrieving/types';
-import { useSubmitFromReactRouter } from '~/lib/forms/submission/utils';
-import { submitOptionsForOrdering_withNavigation } from '~/lib/use-case/action-triggers';
-import { getProductIdFromPathname } from '~/lib/utils/utils';
+import { useSubmitFromReactRouter } from '~/lib/various/form-submission/utils';
+import { submitOptionsForOrdering_withNavigation } from '~/lib/various/form-submission/utils/action-triggers';
+import { getProductIdFromPathname } from '~/lib/various/utils';
 
 export function AccountInfoForm() {
   const submit = useSubmit();

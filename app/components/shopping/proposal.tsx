@@ -6,7 +6,7 @@ import {
 } from '~/lib/shopping/hooks';
 import { checkoutReducer } from '~/lib/shopping/reducers/checkoutReducer';
 import { ELIASCARDONA_USER_ID } from '~/lib/TESTING_MOCKS';
-import { getProductIdFromPathname } from '~/lib/utils/utils';
+import { getProductIdFromPathname } from '~/lib/various/utils';
 import type { action } from '~/routes/course.$productId.checkout';
 import { CheckoutViewHandler } from './stage-handler';
 

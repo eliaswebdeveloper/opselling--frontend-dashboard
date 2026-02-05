@@ -7,7 +7,7 @@ import {
   useSubmitFromReactRouter,
   type BaseUseFormSubmitOptions,
   type SubmitFunctionAbstraction,
-} from '../forms/submission/utils';
+} from '../utils';
 import type {
   CreateCheckoutSessionCommand,
   CreateOrderFromCheckoutSessionCommand,

@@ -1,6 +1,6 @@
 import type { ActionFunctionArgs, LoaderFunctionArgs } from 'react-router';
-import { createApiClient } from '~/lib/api/client';
 import type { GlobalContextData } from '../server/global-context';
+import { createApiClient } from './client';
 
 export const createAuthenticatedClient = (args: LoaderFunctionArgs) => {
   const getAuthToken = async () => {

@@ -1,6 +1,6 @@
 import { type ColumnDef } from '@tanstack/react-table';
 import { Checkbox } from '~/components/ui/checkbox';
-import { formatISODateToLocate } from '~/lib/datetime/utils';
+import { formatISODateToLocate } from '~/lib/various/datetime/utils';
 import { createSortableHeader } from '~/lib/management/utils/table';
 import { DataTableRowActionsHandler } from './data-table-row-actions';
 

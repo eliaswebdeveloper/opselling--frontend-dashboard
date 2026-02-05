@@ -7,14 +7,14 @@ import {
   type SessionData,
   type SessionStorage,
 } from 'react-router';
-import { apiClient } from '~/lib/api/client';
+import { apiClient } from '../api/client';
 import type {
   AuthResponse,
   CreateSessionMiddlewareReturnType,
   SessionStorageGetter,
   ShouldCommitFunction,
   UserDetails,
-} from '~/lib/auth/types';
+} from '~/lib/infrastructure/auth/types';
 
 function defaultShouldCommit() {
   return true;
